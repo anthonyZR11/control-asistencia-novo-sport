@@ -1,0 +1,21 @@
+<br />
+<b>Warning</b>:  Undefined array key "reporte-asistencias" in <b>C:\xampp\htdocs\CONTROL ASISTENCIA NOVO SPORT\BACKEND\controlador\controlador.asistencia.php</b> on line <b>305</b><br />
+<table border='0'> 
+
+					<tr> 
+					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td> 
+					<td style='font-weight:bold; border:1px solid #eee;'>CLIENTE</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>VENDEDOR</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>CANTIDAD</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>PRODUCTOS</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>IMPUESTO</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>NETO</td>		
+					<td style='font-weight:bold; border:1px solid #eee;'>TOTAL</td>		
+					<td style='font-weight:bold; border:1px solid #eee;'>METODO DE PAGO</td	
+					<td style='font-weight:bold; border:1px solid #eee;'>FECHA</td>		
+					</tr><br />
+<b>Fatal error</b>:  Uncaught Error: Class &quot;ControladorClientes&quot; not found in C:\xampp\htdocs\CONTROL ASISTENCIA NOVO SPORT\BACKEND\controlador\controlador.asistencia.php:334
+Stack trace:
+#0 C:\xampp\htdocs\CONTROL ASISTENCIA NOVO SPORT\BACKEND\vista\modulos\descargar-reporte-asistencia.php(10): ControladorAsistencias-&gt;ctrDescargarReporte()
+#1 {main}
+  thrown in <b>C:\xampp\htdocs\CONTROL ASISTENCIA NOVO SPORT\BACKEND\controlador\controlador.asistencia.php</b> on line <b>334</b><br />
