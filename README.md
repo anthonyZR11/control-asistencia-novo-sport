@@ -6,11 +6,12 @@ Trabajado en base a la plantilla admin LTE 3.
 
 cuenta con los siguientes modulos:
 - modulo de login: autenticacion de usuario y contraseña
-- tablero principal: donde se visualiza diferente informacion como el total de ventas global y por meses.
-- modelo de ventas: en cual se realiza la venta de los articulos por cantidades, y precios unitarios, posee 3 tipos de precios, manejan serie - nro de boleta y calcula el igv
-- podemos ver el detalle de las ventas realizadas y filtrar por fechas
-- podemos gestionar el inventario de los productos , aumentar y disminuir el stock de cada producto, este tambien dara alertar de si se superar el minimo stock
-- el resto de modulos aun se encuentrar en proceso...
+- tablero principal: donde se visualiza diferente informacion del sistema.
+- modulo para gestionar empleados
+- modulo para gestionar departamentos (areas de trabajo)
+- modulo para gestionar horarios
+- modulo para gestionar adelantos de dinero
+- modulo para gestionar asistencias
 
   ### TECNOLOGIAS UTILIZADAS
 
@@ -25,7 +26,6 @@ cuenta con los siguientes modulos:
 ## Instalación
 
 - Para realizar las pruebas del presente proyecto hay que descargar el zip de github
-- Ejecutar la base de datos
-- Ejecutar el proyecto desde localhost o un hosting
+- Descargar la base de datos e importarla en mysql
+- Ejecutar el proyecto desde localhost
 
-Tambien puedes visualizar el proyecto en linea [Aquí](https://anthony-dev.agilesdevelopments.com)
