@@ -23,12 +23,11 @@
     <div class="box">
 
       <div class="box-header with-border">
-  
+      <?php if ($_SESSION["rol"] === "admin"): ?>
         <button class="btn btn-primary btn-flat" data-toggle="modal" data-target="#modalAgregarAsistencia"> <i class="fa fa-plus"></i>
-          
           Nuevo
-
         </button>
+      <?php endif; ?>
 
       </div>
 
@@ -46,7 +45,7 @@
              <th>Fecha registro</th>
              <th>Hora de ingreso</th>
              <th>Hora de salida</th>
-             <?php if($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR"){ 
+             <?php if($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR"){ 
              echo '<th>Acciones</th>';
            }
               ?>
@@ -78,14 +77,14 @@
                       <td class="text-uppercase">'.date('h:i A', strtotime($value["salAsistencia"])).'</td>
                       <td>';
 
-                      if($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR"){
+                      if($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR"){
 
                        echo '<div class="btn-group">
 
                         <button class="btn btn-warning  btn-flat btnEditarAsistencia" idAsistencia="'.$value["idAsistencia"].'" data-toggle="modal" data-target="#modalEditarAsistencia"><i class="fa fa-edit"></i> Editar</button>';
                         }
 
-                          if($_SESSION["rol"] == "ADMINISTRADOR"){
+                          if($_SESSION["rol"] == "admin"){
 
                             echo '<button class="btn btn-danger   btn-flat btnEliminarAsistencia" idAsistencia="'.$value["idAsistencia"].'"><i class="fa fa-times"></i> Eliminar</button>';
 

@@ -23,7 +23,7 @@
   </section>
   <section class="content">
     <div class="box">
-      <?php  if($_SESSION["rol"] == "ADMINISTRADOR"){ 
+      <?php  if($_SESSION["rol"] == "admin"){ 
       echo '<div class="box-header with-border"> 
         <a class="btn btn-success btn-flat" href="vista/modulos/descargar-reporte-horario.php"> <i class="fa fa-print" aria-hidden="true"></i>Imprimir</a>
       </div>';

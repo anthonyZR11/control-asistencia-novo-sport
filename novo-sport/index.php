@@ -50,6 +50,8 @@ $(function() {
 
   $('#attendance').submit(function(e){
     e.preventDefault();
+    console.log("asdsad");
+    
     var attendance = $(this).serialize();
     $.ajax({
       type: 'POST',
@@ -57,6 +59,7 @@ $(function() {
       data: attendance,
       dataType: 'json',
       success: function(response){
+      console.log(response);
         if(response.error){
           $('.alert').hide();
           $('.alert-danger').show();

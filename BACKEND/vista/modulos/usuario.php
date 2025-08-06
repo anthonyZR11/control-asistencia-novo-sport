@@ -62,7 +62,7 @@ if($_SESSION["rol"] == "INVITADO"){
            <th>Perfil</th>
            <th>Estado</th>
            <th>Último login</th>
-           <?php if($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR"){ 
+           <?php if($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR"){ 
              echo '<th>Acciones</th>';
            }
               ?>
@@ -114,12 +114,12 @@ if($_SESSION["rol"] == "INVITADO"){
 
                     <div class="btn-group">';
 
-                    if($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR"){
+                    if($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR"){
                         
                      echo '<button class="btn btn-warning btn-flat btnEditarUsuario" idUsuario="'.$value["idUsuario"].'" data-toggle="modal" data-target="#modalEditarUsuario"><i class="fa fa-pencil"></i> Editar</button>';
                       }
 
-                      if($_SESSION["rol"] == "ADMINISTRADOR"){
+                      if($_SESSION["rol"] == "admin"){
 
                      echo' <button class="btn btn-danger btn-flat btnEliminarUsuario" idUsuario="'.$value["idUsuario"].'" fotoUsuario="'.$value["fotoUsuario"].'" usuario="'.$value["nomUsuario"].'"><i class="fa fa-times"></i> Eliminar</button>';
                       }

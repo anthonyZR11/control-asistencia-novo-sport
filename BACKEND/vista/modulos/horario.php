@@ -43,7 +43,7 @@
              <th style="width:10px">#</th>
              <th>Hora de ingreso</th>
              <th>Hora de salida</th>
-             <?php if($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR"){ 
+             <?php if($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR"){ 
              echo '<th>Acciones</th>';
            }
               ?>
@@ -75,13 +75,13 @@
 
                         <div class="btn-group">';
 
-                        if($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR"){
+                        if($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR"){
 
                        echo '<button class="btn btn-warning  btn-flat btnEditarHora" idHora="'.$value["idHorario"].'" data-toggle="modal" data-target="#modalEditarHora"><i class="fa fa-edit"></i> Editar</button>';
                         
                         }
 
-                          if($_SESSION["rol"] == "ADMINISTRADOR"){
+                          if($_SESSION["rol"] == "admin"){
 
                             echo '<button class="btn btn-danger   btn-flat btnEliminarHora" idHora="'.$value["idHorario"].'"><i class="fa fa-times"></i> Eliminar</button>';
 

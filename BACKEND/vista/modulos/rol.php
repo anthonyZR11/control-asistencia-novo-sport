@@ -43,7 +43,7 @@
              <th style="width:10px">#</th>
              <th>Nombre de Rol</th>
              <th>Funciones</th>
-             <?php if($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR"){ 
+             <?php if($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR"){ 
              echo '<th>Acciones</th>';
            }
               ?>
@@ -74,12 +74,12 @@
 
                         <div class="btn-group">';
 
-                        if($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR"){
+                        if($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR"){
 
                         echo '<button class="btn btn-warning  btn-flat btnEditarRol" idRol="'.$value["idRol"].'" data-toggle="modal" data-target="#modalEditarRol"><i class="fa fa-edit"></i> Editar</button>';
                         }
 
-                          if($_SESSION["rol"] == "ADMINISTRADOR"){
+                          if($_SESSION["rol"] == "admin"){
 
                             echo '<button class="btn btn-danger   btn-flat btnEliminarRol" idRol="'.$value["idRol"].'"><i class="fa fa-times"></i> Eliminar</button>';
 

@@ -61,7 +61,7 @@ if ($_SESSION["rol"] == "INVITADO") {
               <th style="width:70px">Fecha de adelanto</th>
               <th style="width:70px">Cantidad de dinero</th>
               <th style="width:260px">Descripción</th>
-              <?php if ($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR") {
+              <?php if ($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR") {
                 echo '<th>Acciones</th>';
               }
               ?>
@@ -97,13 +97,13 @@ if ($_SESSION["rol"] == "INVITADO") {
 
                       <td>';
 
-              if ($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR") {
+              if ($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR") {
 
                 echo '<div class="btn-group">
 
                         <button class="btn btn-warning  btn-flat btnEditarAdelanto"  idAdelanto="' . $value["idAdelanto"] . '" data-toggle="modal" data-target="#modalEditarAdelanto"><i class="fa fa-edit"></i> Editar</button>';
               }
-              if ($_SESSION["rol"] == "ADMINISTRADOR") {
+              if ($_SESSION["rol"] == "admin") {
 
                 echo '<button class="btn btn-danger   btn-flat btnEliminarAdelanto" idAdelanto="' . $value["idAdelanto"] . '"  idEmpleado="' . $value["idEmpleado"] . '"><i class="fa fa-times"></i> Eliminar</button>';
               }

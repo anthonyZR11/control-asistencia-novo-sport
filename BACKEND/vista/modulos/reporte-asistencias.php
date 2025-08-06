@@ -86,7 +86,7 @@
 
           <?php  
 
-           if($_SESSION["rol"] == "ADMINISTRADOR"){ 
+           if($_SESSION["rol"] == "admin"){ 
               echo '<button class="btn btn-success" style="margin-top:5px">Descargar reporte en Excel</button>';
             }
            ?>

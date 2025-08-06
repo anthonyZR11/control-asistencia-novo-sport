@@ -38,7 +38,7 @@
       ?>
     </div> 
 
-    <?php if($_SESSION["perfil"] =="ADMINISTRADOR" || $_SESSION["perfil"] =="EDITOR"){ 
+    <?php if($_SESSION["perfil"] =="admin" || $_SESSION["perfil"] =="EDITOR"){ 
         echo '<div class="row">
               <div class="col-xs-12">
                 <div class="box">

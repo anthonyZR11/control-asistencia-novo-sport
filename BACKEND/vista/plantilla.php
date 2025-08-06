@@ -198,7 +198,6 @@ CUERPO DOCUMENTO
     =============================================*/
 
     if(isset($_GET["ruta"])){
-
       if($_GET["ruta"] == "principal" ||
          $_GET["ruta"] == "usuario" ||
          $_GET["ruta"] == "rol" ||

@@ -47,7 +47,7 @@
               <th>Departamento:</th>
               <th>Horario (L-D):</th>
               <th>Registrado desde:</th>
-              <?php if ($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR") {
+              <?php if ($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR") {
                 echo '<th style="width:157px">Acciones</th>';
               }
               ?>
@@ -92,12 +92,12 @@
 
                     <div class="btn-group">';
 
-              if ($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR") {
+              if ($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR") {
 
                 echo '<button class="btn btn-warning btn-flat btnEditarEmpleado" idEmpleado="' . $value["idEmpleado"] . '" data-toggle="modal" data-target="#modalEditarEmpleado"><i class="fa fa-pencil"></i> Editar</button>';
               }
 
-              if ($_SESSION["rol"] == "ADMINISTRADOR") {
+              if ($_SESSION["rol"] == "admin") {
                 echo '<button class="btn btn-danger btn-flat btnEliminarEmpleado" idEmpleado="' . $value["idEmpleado"] . '" fotoEmpleado="' . $value["fotoEmpleado"] . '" docEmpleado="' . $value["docIdentEmpleado"] . '"><i class="fa fa-times"></i> Eliminar</button>';
               }
 

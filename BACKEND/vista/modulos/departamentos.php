@@ -42,7 +42,7 @@
              
              <th style="width:10px">#</th>
              <th>Nombre departamento</th>
-             <?php if($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR"){ 
+             <?php if($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR"){ 
              echo '<th>Acciones</th>';
            }
               ?>
@@ -70,14 +70,14 @@
 
                       <td>';
 
-                      if($_SESSION["rol"] == "ADMINISTRADOR" || $_SESSION["rol"] == "EDITOR"){
+                      if($_SESSION["rol"] == "admin" || $_SESSION["rol"] == "EDITOR"){
 
                       echo '<div class="btn-group">
 
                         <button class="btn btn-warning btnEditarDep" idDep="'.$value["idDepartamento"].'" data-toggle="modal" data-target="#modalEditarDep"><i class="fa fa-edit"></i> Editar</button>';  
                         }
 
-                          if($_SESSION["rol"] == "ADMINISTRADOR"){
+                          if($_SESSION["rol"] == "admin"){
 
                             echo '<button class="btn btn-danger btnEliminarDep" idDep="'.$value["idDepartamento"].'"><i class="fa fa-times"></i> Eliminar</button>';
 
