@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^$ /novo-sport/index.php [L]  # Redirige la raíz (/)
+RewriteRule ^((?!novo-sport/).*)$ /novo-sport/$1 [L]  # Redirige todo excepto /novo-sport/
