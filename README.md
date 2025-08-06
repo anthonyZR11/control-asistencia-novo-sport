@@ -21,11 +21,14 @@ cuenta con los siguientes modulos:
 ![PHP](https://img.shields.io/badge/PHP-F7DF1E?style=for-the-badge&logo=php&logoColor=white&color=%23777BB4)
 ![MYSQL](https://img.shields.io/badge/MYSQL-F7DF1E?style=for-the-badge&logo=mysql&logoColor=white&color=%234479A1)
 ![BOOTSTRAP](https://img.shields.io/badge/BOOTSTRAP-F7DF1E?style=for-the-badge&logo=bootstrap&logoColor=white&color=%237952B3)
-  
 
-## Instalación
+## Marcar asistencia
+- **url:** https://proyecto1.darkwolfz.duckdns.org/
 
-- Para realizar las pruebas del presente proyecto hay que descargar el zip de github
-- Descargar la base de datos e importarla en mysql
-- Ejecutar el proyecto desde localhost
+## Dashboard de gestión
+- **url:** https://proyecto1.darkwolfz.duckdns.org/Backend
+
+## Credenciales
+ **user:** test@gmail.com
+ **pass:** 12345
 
