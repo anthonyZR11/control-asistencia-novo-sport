@@ -1,1 +1,3 @@
-230910213144.sql
+*.sql
+BACKEND/modelo/conexion.php
+novo-sport/modelo/conexion.php
