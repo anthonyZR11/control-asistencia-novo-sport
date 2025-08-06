@@ -52,7 +52,9 @@
 				}
 				else{
 					$row = $query->fetch_assoc();
-					if($row['salAsistencia'] != '00:00:00'){
+
+echo "valor: " . $row['salAsistencia'];
+					if($row['salAsistencia'] != '00:00:00' && !empty($row['salAsistencia'])){
 						$output['error'] = true;
 						$output['message'] = 'Has registrado tu salida satisfactoriamente por el día de hoy';
 					}
